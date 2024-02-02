@@ -1,4 +1,4 @@
-import PorscheNext from "./assets/fonts/PorscheNext.otf"; // Assuming 'public' is the root of your project
+import PorscheNext from "./fonts/PorscheNext.otf"; // Assuming 'public' is the root of your project
 import "./globals.css";
 
 const inter = {
@@ -10,7 +10,9 @@ const inter = {
     }
   `,
 };
-<link rel="icon" href="/favicon.ico" />
+<head>
+  <link rel="icon" href="/favicon.ico" />;
+</head>;
 
 export const metadata = {
   title: "GT3 RS - 2023",
