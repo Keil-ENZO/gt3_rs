@@ -4,13 +4,13 @@ import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import Picture1 from "../app/assets/picture1.png";
-import Picture10 from "../app/assets/picture10.png";
-import Picture2 from "../app/assets/picture2.png";
-import Pictur4 from "../app/assets/picture4.png";
-import Pictur5 from "../app/assets/picture5.png";
-import Picture8 from "../app/assets/picture8.png";
-import Picture9 from "../app/assets/picture9.png";
+import Picture1 from "../public/picture1.webp";
+import Picture10 from "../public/picture10.webp";
+import Picture2 from "../public/picture2.webp";
+import Pictur4 from "../public/picture4.webp";
+import Pictur5 from "../public/picture5.webp";
+import Picture8 from "../public/picture8.webp";
+import Picture9 from "../public/picture9.webp";
 
 const ZoomImg = () => {
   const container = useRef(null);
