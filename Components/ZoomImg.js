@@ -20,10 +20,10 @@ const ZoomImg = () => {
   });
 
   const scale4 = useTransform(scrollYProgress, [0, 1], [1, 3]);
-  const scale5 = useTransform(scrollYProgress, [0, 1], [1, 0]);
-  const scale6 = useTransform(scrollYProgress, [0, 1], [1, 0]);
-  const scale8 = useTransform(scrollYProgress, [0, 1], [1, 0]);
-  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const scale5 = useTransform(scrollYProgress, [0, 1], [1, 4]);
+  const scale6 = useTransform(scrollYProgress, [0, 1], [1, 5]);
+  const scale8 = useTransform(scrollYProgress, [0, 1], [1, 6]);
+  const scale9 = useTransform(scrollYProgress, [0, 1], [1, 7]);
 
   // const pictures = [
   //   {
@@ -83,90 +83,90 @@ const ZoomImg = () => {
 
         <motion.div
           style={{ scale: scale5 }}
-          className=" w-[100%] h-[100%] absolute top-[20vh] right-[32vw] m-5 flex items-center justify-center"
+          className=" w-[100%] h-[100%] absolute top-0 m-5 flex items-center justify-center"
         >
-          <div className="w-[25vw] h-[15vw] relative">
+          <div className="w-[25vw] h-[15vw] top-[20vh] right-[32vw] relative">
             <Image
               src={Picture2}
               alt="img"
               fill
               placeholder="blur"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
           </div>
         </motion.div>
 
         <motion.div
           style={{ scale: scale6 }}
-          className=" w-[100%] h-[100%] absolute top-[-35vh] right-[-35vw] m-5 flex items-center justify-center"
+          className=" w-[100%] h-[100%] absolute top-0 m-5 flex items-center justify-center"
         >
-          <div className="w-[25vw] h-[15vw] relative">
+          <div className="w-[25vw] h-[15vw] top-[-35vh] right-[-35vw] relative">
             <Image
               src={Picture9}
               alt="img"
               fill
               placeholder="blur"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
           </div>
         </motion.div>
 
         <motion.div
           style={{ scale: scale6 }}
-          className=" w-[100%] h-[100%] absolute top-[-5vh] left-[30vw] m-5 flex items-center justify-center"
+          className=" w-[100%] h-[100%] absolute top-0 m-5 flex items-center justify-center"
         >
-          <div className="w-[25vw] h-[15vw] relative">
+          <div className="w-[25vw] h-[15vw] top-[-5vh] left-[30vw] relative">
             <Image
               src={Picture10}
               alt="img"
               fill
               placeholder="blur"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
           </div>
         </motion.div>
 
         <motion.div
           style={{ scale: scale8 }}
-          className=" w-[100%] h-[100%] absolute top-[-35vh] right-[35vw] m-5 flex items-center justify-center"
+          className=" w-[100%] h-[100%] absolute top-0 m-5 flex items-center justify-center"
         >
-          <div className="w-[25vw] h-[15vw] relative">
+          <div className="w-[25vw] h-[15vw] top-[-35vh] right-[35vw] relative">
             <Image
               src={Picture1}
               alt="img"
               fill
               placeholder="blur"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
           </div>
         </motion.div>
 
         <motion.div
           style={{ scale: scale9 }}
-          className=" w-[100%] h-[100%] absolute top-[35vh] right-[-5vw] m-5 flex items-center justify-center"
+          className=" w-[100%] h-[100%] absolute top-0 m-5 flex items-center justify-center"
         >
-          <div className="w-[28vw] h-[18vw] relative">
+          <div className="w-[28vw] h-[18vw] top-[35vh] right-[-5vw] relative">
             <Image
               src={Pictur5}
               alt="img"
               fill
               placeholder="blur"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
           </div>
         </motion.div>
 
         <motion.div
           style={{ scale: scale6 }}
-          className=" w-[100%] h-[100%] absolute top-[35vh] right-[-35vw] m-5 flex items-center justify-center"
+          className=" w-[100%] h-[100%] absolute top-0 m-5 flex items-center justify-center"
         >
-          <div className="w-[28vw] h-[18vw] relative">
+          <div className="w-[28vw] h-[18vw] top-[35vh] right-[-35vw] relative">
             <Image
               src={Pictur4}
               alt="img"
               fill
               placeholder="blur"
-              className="object-cover w-full h-full"
+              className="object-cover"
             />
           </div>
         </motion.div>
