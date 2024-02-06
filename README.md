@@ -10,4 +10,20 @@ Presention de la gallerie photo de la Porsche 911 GT3 RS
 - [JavaScript]
 - [Tailwind CSS]
 
+## Installation
+
+npm install
+# or
+yarn install
+
+
+## Usage
+
+npm run dev
+# or
+yarn dev
+
+
+
+
 
