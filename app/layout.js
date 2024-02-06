@@ -11,7 +11,7 @@ const inter = {
   `,
 };
 <head>
-  <link rel="icon" href="/favicon.ico" />;
+  <link rel="icon" href="./favicon.ico" />;
 </head>;
 
 export const metadata = {
