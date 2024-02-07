@@ -64,7 +64,7 @@ const ZoomImg = () => {
   }, []);
 
   return (
-    <div ref={container} className="h-[300vh] w-full relative mb-[100vh]">
+    <div ref={container} className="h-[300vh] w-[100%] relative mb-[10vh]">
       <div className="sticky top-0 h-[100vh] overflow-hidden">
         <motion.div
           style={{ scale: scale4 }}
