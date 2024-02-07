@@ -1,7 +1,7 @@
 "use client";
 
-import ZoomImg from "@/Components/ZoomImg";
 import Image from "next/image";
+import ZoomImg from "../Components/ZoomImg";
 import Logo from "../app/assets/logo.svg";
 import Porsche from "../public/porsche-normal.webp";
 
@@ -38,14 +38,14 @@ export default function Home() {
     <div>
       <div className="p-20 m-20">
         <Image src={Logo} alt="img" className="w-full" />
-        <p className="text-[5vw]">911 GT3 RS</p>
+        <p className="text-5xl">911 GT3 RS</p>
       </div>
 
       <ZoomImg />
 
-      <div className="flex flex-col justify-center items-center h-[85vh]">
+      <div className="flex flex-col justify-center items-center h-screen">
         <div>
-          <Image src={Porsche} alt="img" className="w-[50vw]" />
+          <Image src={Porsche} alt="img" width={800} height={300} />
         </div>
 
         <div className="w-[50vw] flex justify-between items-center">
@@ -54,21 +54,21 @@ export default function Home() {
               {chevaux}
               <span> ch</span>
             </h2>
-            <p>Puissance</p>
+            <p className="text-xl">Puissance</p>
           </div>
           <div>
             <h2 className="text-[3vw] value2">
               {seconde}
               <span> s</span>
             </h2>
-            <p>0 à 100km/h</p>
+            <p className="text-xl">0 à 100km/h</p>
           </div>
           <div>
             <h2 className="text-[3vw] value3">
               {vitesse}
               <span> km/h</span>
             </h2>
-            <p>Vitesse maximal</p>
+            <p className="text-xl">Vitesse maximal</p>
           </div>
         </div>
       </div>
