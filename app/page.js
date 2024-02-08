@@ -1,6 +1,7 @@
-"use client";
+"use client"; // Marque le composant comme étant rendu côté client
 
 import Image from "next/image";
+import { useEffect } from "react";
 import ZoomImg from "../Components/ZoomImg";
 import Logo from "../app/assets/logo.svg";
 import Porsche from "../public/porsche-normal.webp";
@@ -12,27 +13,42 @@ export default function Home() {
   let seconde = 3.2;
   let vitesse = 296;
 
-  // effet de conteur pour les chiffres
-  const counter = () => {
-    let i = 0;
-    let j = 0;
-    let k = 0;
-    setInterval(() => {
-      if (i < chevaux) {
-        i++;
-        document.querySelector(".value1").innerHTML = i + " ch";
+  let scroll = 0;
+
+  useEffect(() => {
+    const counter = () => {
+      let i = 0;
+      let j = 0;
+      let k = 0;
+
+      const interval = setInterval(() => {
+        if (i < 525) {
+          i += 1;
+          document.querySelector(".value1").innerText = i + " ch";
+        }
+        if (j < 3.2) {
+          j += 0.01;
+          document.querySelector(".value2").innerText = j.toFixed(1) + " s";
+        }
+        if (k < 296) {
+          k += 1;
+          document.querySelector(".value3").innerText = k + " km/h";
+        }
+        if (i === 525 && j === 3.2 && k === 296) {
+          clearInterval(interval);
+        }
+      }, 10);
+
+      return () => clearInterval(interval);
+    };
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > scroll) {
+        counter();
       }
-      if (j < seconde) {
-        j += 0.1;
-        document.querySelector(".value2").innerHTML = j.toFixed(1) + " s";
-      }
-      if (k < vitesse) {
-        k++;
-        document.querySelector(".value3").innerHTML = k + " km/h";
-      }
-    }, 10);
-  };
-  counter();
+      scroll = window.scrollY;
+    });
+  }, []);
 
   return (
     <div>
