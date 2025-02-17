@@ -1,5 +1,3 @@
-"use client";
-
 import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
