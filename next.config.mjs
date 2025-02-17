@@ -18,4 +18,8 @@ export default {
 
     return config;
   },
+
+  images: {
+    unoptimized: true, // Si vous avez des problèmes avec l'optimisation d'image
+  },
 };
