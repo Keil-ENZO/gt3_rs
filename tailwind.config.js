@@ -7,9 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      "fontFamily": {
-        "porsche": ["PorscheNext", "sans-serif"],
-
+      fontFamily: {
+        porsche: ["PorscheNext", "sans-serif"],
       },
     },
   },
