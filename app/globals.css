@@ -13,3 +13,7 @@ body {
     text-wrap: balance;
   }
 }
+
+h2 {
+  font-size: clamp(0.5rem, 10vw, 5rem);
+}

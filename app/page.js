@@ -33,14 +33,12 @@ const GT3RSPage = () => {
 
   return (
     <div>
-      {/* Header Section */}
-      <div className="p-20 m-20">
-        <Image src={Logo} alt="img" className="w-full" />
-        <p className="text-5xl">911 GT3 RS</p>
+      <div className="md:my-20 p-10 flex justify-center items-start flex-col w-full">
+        <Image src={Logo} alt="img" className="w-[80%] max-w-[1024px]" />
+        <h2>911 GT3 RS</h2>
       </div>
 
-      {/* Image Zoom Section */}
-      <div ref={container} className="h-[300vh] w-[100%] relative mb-[10vh]">
+      <div ref={container} className="h-[300vh] w-[100%] relative mb-[5vh]">
         <div className="sticky top-0 h-[100vh] overflow-hidden">
           <motion.div
             style={{ scale: scale4 }}
@@ -158,27 +156,20 @@ const GT3RSPage = () => {
 
       {/* Stats Section */}
       <div className="flex flex-col justify-center items-center mb-[20px]">
-        <div className="w-[50vw] flex justify-between items-center">
+        <div className="w-full flex flex-col justify-around md:items-center md:flex-row">
           <div>
-            <h2 className="text-[3vw] value1">
-              525
-              <span> ch</span>
-            </h2>
-            <p className="text-xl">Puissance</p>
+            <h2 className=" value1">525 ch</h2>
+            <p className="text-[2rem]">Puissance</p>
           </div>
+
           <div>
-            <h2 className="text-[3vw] value2">
-              3.2
-              <span> s</span>
-            </h2>
-            <p className="text-xl">0 à 100km/h</p>
+            <h2 className=" value2">3.2 s</h2>
+            <p className="text-[2rem]">0 à 100km/h</p>
           </div>
+
           <div>
-            <h2 className="text-[3vw] value3">
-              296
-              <span> km/h</span>
-            </h2>
-            <p className="text-xl">Vitesse maximal</p>
+            <h2 className=" value3">296 km/h</h2>
+            <p className="text-[2rem]">Vitesse maximal</p>
           </div>
         </div>
       </div>
