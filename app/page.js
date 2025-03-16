@@ -38,7 +38,7 @@ const GT3RSPage = () => {
         <h2>911 GT3 RS</h2>
       </div>
 
-      <div ref={container} className="h-[300vh] w-[100%] relative mb-[5vh]">
+      <div ref={container} className="h-[300vh] w-[100%] relative">
         <div className="sticky top-0 h-[100vh] overflow-hidden">
           <motion.div
             style={{ scale: scale4 }}
@@ -151,26 +151,6 @@ const GT3RSPage = () => {
               />
             </div>
           </motion.div>
-        </div>
-      </div>
-
-      {/* Stats Section */}
-      <div className="flex flex-col justify-center items-center mb-[20px]">
-        <div className="w-full flex flex-col justify-around md:items-center md:flex-row">
-          <div>
-            <h2 className=" value1">525 ch</h2>
-            <p className="text-[2rem]">Puissance</p>
-          </div>
-
-          <div>
-            <h2 className=" value2">3.2 s</h2>
-            <p className="text-[2rem]">0 à 100km/h</p>
-          </div>
-
-          <div>
-            <h2 className=" value3">296 km/h</h2>
-            <p className="text-[2rem]">Vitesse maximal</p>
-          </div>
         </div>
       </div>
     </div>
